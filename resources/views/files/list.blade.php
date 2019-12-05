@@ -1,7 +1,6 @@
 @extends('layouts.base')
 @section('title', 'File List')
 @section('content')
-<?php use Illuminate\Support\Facades\Storage; ?>
 <div class="container mt-3">    
     <div class="row justify-content-center">
         <div class="col-md-10">
@@ -43,7 +42,10 @@
                                 <p class="mb-1">{{$file->description}}</p>
                                 <hr>                                
                             </a>
+                            <a target="_blank" href="{{asset('storage/uploads/'.$file->filename)}}" class="text-center list-group-item list-group-item-action bg-success text-white"><i class="fa fa-eye"></i>&nbsp;Preview</a>
+                            &nbsp;
                             <a target="_blank" href="{{route('download-file', $file->id)}}" class="text-center list-group-item list-group-item-action active">Download File <i class="fa fa-download"></i></a>
+                            &nbsp;
                             @can('delete', $file)
                             <a onclick="return confirm('Are You Sure?');" href="{{route('delete-file', $file->id)}}" class="text-center text-white list-group-item list-group-item-action bg-danger">Delete File <i class="fa fa-trash"></i></a>
                             @endcan

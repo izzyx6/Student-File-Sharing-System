@@ -12,9 +12,7 @@
 */
 
 Route::middleware(['check-user'])->group(function(){
-    Route::get('/', function () {
-        return redirect()->route('file-list');
-    })->name('homepage');
+    Route::get('/', 'FrontendController@index')->name('homepage');
 
     Route::namespace('Users')->group(function(){
         Route::get('profile', 'UsersController@profile')->name('profile');
