@@ -8,7 +8,7 @@
                     </div>
                     <div class="card-body">
                         <form action="#" @submit.prevent="register">
-                            <div class="row form-group">
+                            <!--div class="row form-group">
                                 <div class="col-form-label text-right col-md-3">
                                     What Are You?
                                 </div>  
@@ -18,7 +18,7 @@
                                         <option value="2">Staff</option>
                                     </select>
                                 </div>                          
-                            </div>
+                            </div-->
                             <div class="row form-group">
                                 <div class="col-form-label text-right col-md-3">
                                     Username

@@ -6,7 +6,7 @@
             <div class="col-md-10">
                 <div class="card">
                     <div class="card-header">
-                        <p class="text-center"><b>Update My Profile</b></p>
+                        <p class="text-center"><b>Profile Update</b></p>
                     </div>
                     <div class="card-body">
                         <div class="container">

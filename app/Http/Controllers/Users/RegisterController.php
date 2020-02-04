@@ -22,7 +22,7 @@ class RegisterController extends Controller
             'username'=>$request->input('username'),
             'password'=>bcrypt($request->input('password')),
             'email'=>$request->input('email'),
-            'role_id'=>$request->input('role'),
+            'role_id'=>1,
         ]);
         if($newUser){            
             $request->session()->flash('success', 'Your account has been created successfully');

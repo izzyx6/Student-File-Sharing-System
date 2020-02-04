@@ -5,7 +5,7 @@
         <div class="row justify-content-center">
             <div class="col-md-3">
                 <hr>
-                <img src="{{asset('storage/profile_pics/'.$user->profile->profile_pic)}}" style="border-radius: 20px;" class=" w-100 img-thumbnail img-responsive">
+                <!--<img src="{{asset('storage/profile_pics/'.$user->profile->profile_pic)}}" style="border-radius: 20px;" class=" w-100 img-thumbnail img-responsive">-->
                 <hr>
                 <a href="{{route('change-password')}}" class="btn btn-outline-info btn-block">Change Password</a>
                 <hr>         

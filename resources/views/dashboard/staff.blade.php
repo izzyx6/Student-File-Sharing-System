@@ -17,11 +17,11 @@
                         <th>
                                 <div class="btn-group" role="group" aria-label="User Actions">
                                     @if($user->status==1)
-                                    <a href="{{route('block-user', $user->id)}}" onclick="return confirm('Are you sure?');" class="btn btn-sm btn-outline-secondary">Block User <i class="fa fa-lock"></i></a>
+                                    <a href="{{route('block-user', $user->id)}}" onclick="return confirm('Are you sure?');" class="btn btn-sm btn-outline-secondary"><i class="fa fa-lock"></i> Block </a>
                                     @else
-                                    <a href="{{route('unblock-user', $user->id)}}" onclick="return confirm('Are you sure?');" class="btn btn-sm btn-outline-info">Unblock User <i class="fa fa-lock-open"></i></a>
+                                    <a href="{{route('unblock-user', $user->id)}}" onclick="return confirm('Are you sure?');" class="btn btn-sm btn-outline-info"><i class="fa fa-lock-open"></i> Unblock</a>
                                     @endif
-                                    <a href="{{route('delete-user', $user->id)}}" onclick="return confirm('Are you sure?');" class="btn btn-sm btn-outline-danger">Delete User <i class="fa fa-trash"></i></a>
+                                    <a href="{{route('delete-user', $user->id)}}" onclick="return confirm('Are you sure?');" class="btn btn-sm btn-outline-danger"><i class="fa fa-trash"></i> Delete</a>
                                 </div>
                             </th>
                     </tr>

@@ -1,15 +1,15 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <a href="{{route('homepage')}}" class="navbar-brand">Web Sharing</a>
+    <a href="{{route('homepage')}}" class="navbar-brand"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item @if(url()->current()==route('dept-list', 'csc')){{__('active')}}@endif"><a href="{{route('dept-list', 'csc')}}" class="nav-link"><i class="fa fa-desktop"></i> Computer Science</a></li>
-            <li class="nav-item @if(url()->current()==route('dept-list', 'maths')){{__('active')}}@endif"><a href="{{route('dept-list', 'maths')}}" class="nav-link"><i class="fa fa-calculator"></i> Mathematics</a></li>
-            <li class="nav-item @if(url()->current()==route('dept-list', 'chemistry')){{__('active')}}@endif"><a href="{{route('dept-list', 'chemistry')}}" class="nav-link"><i class="fa fa-atom"></i> Chemistry</a></li>
-            <li class="nav-item @if(url()->current()==route('dept-list', 'geology')){{__('active')}}@endif"><a href="{{route('dept-list', 'geology')}}" class="nav-link"><i class="fa fa-globe"></i> Geology</a></li>
-            <li class="nav-item @if(url()->current()==route('dept-list', 'physics')){{__('active')}}@endif"><a href="{{route('dept-list', 'physics')}}" class="nav-link"><i class="fa fa-bolt"></i> Physics</a></li>
+            <li class="nav-item @if(url()->current()==route('dept-list', 'csc')){{__('active')}}@endif"><a href="{{route('dept-list', 'csc')}}" class="nav-link"><i class="fa fa-"></i> Computer Science</a></li>
+            <li class="nav-item @if(url()->current()==route('dept-list', 'chemistry')){{__('active')}}@endif"><a href="{{route('dept-list', 'chemistry')}}" class="nav-link"><i class="fa fa-"></i> Chemistry</a></li>
+            <li class="nav-item @if(url()->current()==route('dept-list', 'geology')){{__('active')}}@endif"><a href="{{route('dept-list', 'geology')}}" class="nav-link"><i class="fa fa-"></i> Geology</a></li>
+            <li class="nav-item @if(url()->current()==route('dept-list', 'maths')){{__('active')}}@endif"><a href="{{route('dept-list', 'maths')}}" class="nav-link"><i class="fa fa-"></i> Mathematics</a></li>    
+            <li class="nav-item @if(url()->current()==route('dept-list', 'physics')){{__('active')}}@endif"><a href="{{route('dept-list', 'physics')}}" class="nav-link"><i class="fa fa-"></i> Physics</a></li>
            
         </ul>
         <div class="dropdown-divider"></div>

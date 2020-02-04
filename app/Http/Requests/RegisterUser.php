@@ -27,7 +27,7 @@ class RegisterUser extends FormRequest
             'username'=>'required|unique:users|max:100',
             'email'=>'required|email|unique:users',
             'password'=>'required|max:100',
-            'role'=>'required|exists:roles,id',
+           
         ];
     }
 }

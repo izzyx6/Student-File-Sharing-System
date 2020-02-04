@@ -1,12 +1,12 @@
 @extends('layouts.base')
-@section('title', 'Welcome To The File Sharing Site')
+@section('title', 'Faculty of Physical Science')
 @section('content')
     <div class="container">
         <div class="jumbotron">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-12">
-                        <h1 class="display-4 text-center">Search Your Files</h1>
+                        <h1 class="display-6 text-center">Search Through Archrive/h1>
                     </div>
                     <div class="col-2"></div>
                     <div class="col-8">
@@ -20,5 +20,5 @@
             </div>
 
         </div>
-    </div>
+ 
 @endsection

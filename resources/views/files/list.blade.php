@@ -20,7 +20,7 @@
                         @elseif(request()->segment(2)=='chemistry')
                         Chemistry Files
                         @elseif(request()->segment(1)=='my-files')
-                        My Files
+                        All Materials Uploaded By You
                         @else
                         File List
                         @endif
@@ -42,12 +42,23 @@
                                 <p class="mb-1">{{$file->description}}</p>
                                 <hr>                                
                             </a>
-                            <a target="_blank" href="{{asset('storage/uploads/'.$file->filename)}}" class="text-center list-group-item list-group-item-action bg-success text-white"><i class="fa fa-eye"></i>&nbsp;Preview</a>
+                            &nbsp;<div class="row form-group ">
+                            <div class="col-md-12">
+                            <a target="_blank" href="{{asset('storage/uploads/'.$file->filename)}}" class="text-center text-white btn btn-info"><i class="fa fa-eye"></i>&nbsp;Preview</a>
                             &nbsp;
-                            <a target="_blank" href="{{route('download-file', $file->id)}}" class="text-center list-group-item list-group-item-action active">Download File <i class="fa fa-download"></i></a>
-                            &nbsp;
+                            </div>
+</div>
+                            &nbsp;<div class="row form-group ">
+                            <div class="col-md-12">
+                            <a target="_blank" href="{{route('download-file', $file->id)}}" class="text-center text-white btn btn-success"><i class="fa fa-download"></i>&nbsp;Download File </a>
+                            </div>
+</div>
+                            &nbsp;<div class="row form-group ">
+                            <div class="col-md-12">
                             @can('delete', $file)
-                            <a onclick="return confirm('Are You Sure?');" href="{{route('delete-file', $file->id)}}" class="text-center text-white list-group-item list-group-item-action bg-danger">Delete File <i class="fa fa-trash"></i></a>
+                            <a onclick="return confirm('Are You Sure?');" href="{{route('delete-file', $file->id)}}" class="text-center text-white btn btn-danger"><i class="fa fa-trash"></i>&nbsp;Delete File </a>
+</div>
+</div>
                             @endcan
                             @empty
                             @if(request()->search)

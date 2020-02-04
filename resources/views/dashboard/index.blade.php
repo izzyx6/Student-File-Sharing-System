@@ -6,17 +6,18 @@
             <div class="col-md-9">                
                 <div class="card">
                     <div class="card-header">
-                        <div class="d-flex justify-content-between">
+                        <div class="d-flex justify-content-between ">
                             <h3>Admin Dashboard</h3>
                             <ul class="nav card-header-tabs nav-tabs justify-content-end">
-                                <li class="nav-item">
+                              <!--  <li class="nav-item">
                                     <a href="{{route('dashboard')}}" class="nav-link">Site Info</a>
                                 </li>
+                                
                                 <li class="nav-item">
-                                    <a href="{{route('staffs')}}" class="nav-link">Staffs</a>
-                                </li>
+                                    <a href="{{route('staffs')}}" class="nav-link btn-dark">View Staffs </a>
+                                </li>-->
                                 <li class="nav-item">
-                                    <a href="{{route('students')}}" class="nav-link">Students</a>
+                                    <a href="{{route('students')}}" class="nav-link btn-dark"> View Students</a>
                                 </li>
                             
                             </ul>                            

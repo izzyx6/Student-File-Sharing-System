@@ -37400,59 +37400,6 @@ var render = function() {
                     { staticClass: "col-form-label text-right col-md-3" },
                     [
                       _vm._v(
-                        "\n                                What Are You?\n                            "
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-8" }, [
-                    _c(
-                      "select",
-                      {
-                        directives: [
-                          {
-                            name: "model",
-                            rawName: "v-model",
-                            value: _vm.role,
-                            expression: "role"
-                          }
-                        ],
-                        staticClass: "form-control",
-                        on: {
-                          change: function($event) {
-                            var $$selectedVal = Array.prototype.filter
-                              .call($event.target.options, function(o) {
-                                return o.selected
-                              })
-                              .map(function(o) {
-                                var val = "_value" in o ? o._value : o.value
-                                return val
-                              })
-                            _vm.role = $event.target.multiple
-                              ? $$selectedVal
-                              : $$selectedVal[0]
-                          }
-                        }
-                      },
-                      [
-                        _c("option", { attrs: { value: "1" } }, [
-                          _vm._v("Student")
-                        ]),
-                        _vm._v(" "),
-                        _c("option", { attrs: { value: "2" } }, [
-                          _vm._v("Staff")
-                        ])
-                      ]
-                    )
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row form-group" }, [
-                  _c(
-                    "div",
-                    { staticClass: "col-form-label text-right col-md-3" },
-                    [
-                      _vm._v(
                         "\n                                Username\n                            "
                       )
                     ]
@@ -50075,8 +50022,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\xampp\htdocs\work\file_sharing\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\work\file_sharing\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Users\Isreal Ufumaka\Documents\PHP TEMPLATE\file_sharing\file_sharing\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\Isreal Ufumaka\Documents\PHP TEMPLATE\file_sharing\file_sharing\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

@@ -5,8 +5,8 @@
     <div class="row justify-content-center">
         <div class="col-md-5">               
             <div class="card">
-                <div class="card-header bg-primary">
-                    <h5 class="text-center text-white">Login</h5>
+                <div class="card-header bg-secondary">
+                    <h5 class="text-center text-white">Login Portal</h5>
                 </div>
                 <div class="card-body">
                     <div class="container">
@@ -32,18 +32,10 @@
                                     <input placeholder="Enter Password" type="password" name="password" class="form-control @if(session()->has('error')) is-invalid @endif">
                                     </div>
                                 </div>
-                                <div class="row form-group">                                       
-                                    <div class="col-sm-8">
-                                        <div class="form-check">
-                                             <input name="remember" type="checkbox" class="form-check-input">
-                                            <label for="" class="form-check-label">Remember Me</label>    
-                                        </div>
-                                    </div>                            
-                                                                       
-                                </div>
+                              
                                 
                                 <div class="row form-group">
-                                <button class="btn btn-block btn-dark"><span class="fa fa-sign-in"></span> Login</button>
+                                <button class="btn btn-info"><span class="fa fa-sign-in"></span> Login</button>
                                 </div>
                             </form>
                     </div>
