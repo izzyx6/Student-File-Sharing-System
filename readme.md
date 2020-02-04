@@ -1,5 +1,5 @@
 ## Description
-This is a site for file sharing
+This is a we app for file sharing
 # Student-File-Sharing-System
 This project is built using laravel
 
